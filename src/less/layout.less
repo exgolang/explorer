@@ -1,0 +1,172 @@
+
+
+.site-content{
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  header{
+
+    display: flex;
+    flex-direction: row;
+    background: white;
+
+    .header-block-left{
+
+      min-width: 65px;
+      background: @yellow-0;
+      color: black;
+      border-bottom: 1px solid @light-grey;
+      padding: 10px 20px;
+
+      i{
+        font-size: 1.2em;
+      }
+
+    }
+
+    .header-block-right{
+      flex: 1;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #557ebf;
+      background: #557ebf;
+      color: white;
+
+      .link-name{
+        display: inline-block;
+        margin: 0;
+        font-size: 1.2em;
+        position: relative;
+        top: 5px;
+      }
+
+      .item-search{
+        float: right;
+        width: 34%;
+        text-align: right;
+        position: relative;
+
+        input{
+          height: 30px;
+        }
+
+        .cancel-search{
+
+          color: dimgrey;
+          position: absolute;
+          right: 6px;
+          font-size: 1.2em;
+          top: 5px;
+
+        }
+
+        .search-no-results{
+
+          cursor: pointer;
+          padding: 1px 5px;
+          position: absolute;
+          left: 10px;
+          top: 6px;
+          line-height: .9;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .nav-left{
+
+    flex: 1;
+    max-width: 65px;
+    background: #fbfbfb;
+    border-right: 1px solid #f1f1f1;
+
+    nav{
+
+      ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        color: white;
+
+        li{
+          padding: 25px 20px;
+          margin: 0;
+          text-align: center;
+          border-bottom: 1px solid #f1f1f1;
+
+          a{
+            color: #557ebf;
+          }
+
+          i{
+            font-size: 1.2em;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .content-main{
+
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    .content-middle{
+
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .page-content{
+        flex: 1;
+        padding: @default-padding;
+
+      }
+
+    }
+
+  }
+
+
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #fbfbfb;
+}
+
+.panel-default {
+  border-color: #fbfbfb;
+
+  .panel-heading {
+    color: #333;
+    background-color: whitesmoke;
+    border-color: #fbfbfb;
+    color: #2c589e;
+  }
+
+}
+
+footer{
+
+  text-align: center;
+  padding: 10px;
+
+  a, a:hover, a:active, a:visited{
+    color: #b1b1b1;
+  }
+
+}
